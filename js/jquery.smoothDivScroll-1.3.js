@@ -429,6 +429,9 @@
 				}
 
 				self._trigger("setupComplete");
+				
+				// expose complete event outside the component
+				$(document).trigger('smoothDivScrollSetupComplete', o.scrollWrapperClass);
 
 			});
 
